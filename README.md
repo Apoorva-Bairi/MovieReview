@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🎬 Movie Review App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Movie Review web application built using React, Redux Toolkit, TypeScript, and Tailwind CSS.  
+Users can search for movies, filter results, view detailed information, rate movies, and manage their favorites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+--netlify 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://moviereview-assignment.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🔍 Search movies using OMDb API
+- 📅 Filter movies by year
+- 🎬 View detailed movie information (poster, plot, cast, etc.)
+- ⭐ Rate movies (1–5 star system)
+- ❤️ Add or remove movies from favorites
+- 🌙 Dark mode UI
+- 📱 Fully responsive design
+- ⚡ Fast and optimized performance
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Frontend:** React JS  
+- **State Management:** Redux Toolkit  
+- **Language:** TypeScript  
+- **Styling:** Tailwind CSS  
+- **API:** OMDb API  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](./src/assets/homepage.png)
+
+### 🔍 Search Page
+![Search](./src/assets/search.png)
+
+### 🎬 Movie Details
+![Details](./src/assets/moviedetails.png)
+
+### 🎬 no Movie Found 
+![No movie found] (./src/assets/noimage.png)
+
+### 🎬  Movie Found 
+![ movie found] (./src/assets/foundimage.png)
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+
+cd MovieReview
+npm install
+npm run dev
+
+
+
+
+
+
+## 🔑 Environment Variables
+
+Create a `.env` file:
+
+VITE_OMDB_API_KEY=your_api_key
+
+
+## 👩‍💻 Author
+
+Apoorva Bairi
