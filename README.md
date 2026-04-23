@@ -47,10 +47,10 @@ https://moviereview-assignment.netlify.app/
 ![Details](./src/assets/moviedetails.png)
 
 ### 🎬 no Movie Found 
-![No movie found] (./src/assets/noimage.png)
+![No movie found](./src/assets/noimage.png)
 
 ### 🎬  Movie Found 
-![ movie found] (./src/assets/foundimage.png)
+![ movie found](./src/assets/foundimage.png)
 
 ## 📦 Installation & Setup
 
